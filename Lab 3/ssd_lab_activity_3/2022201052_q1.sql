@@ -1,1 +1,0 @@
-select E.Fname,E.Minit,E.Lname,E.Ssn,D.Dnumber,D.Dname from EMPLOYEE E,DEPARTMENT D where E.ssn in (select distinct Super_ssn from EMPLOYEE where ssn in (select distinct Essn from WORKS_ON where Hours<40)) and E.ssn=D.mgr_ssn;
