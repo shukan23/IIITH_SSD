@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Record</title>
+    <link rel="stylesheet" href="./main.css">
+
+    <script>
+        listOfNumbers = [1,2,3,4];
+        listOfNames = [];
+        function AddStudent(){
+            rollnum = document.getElementById("srno").value;
+            name = document.getElementById("sname").value;
+            
+            var table = document.getElementById("StudentRec");
+            var row = table.insertRow(-1);
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            cell1.innerHTML = rollnum;
+            cell2.innerHTML = name;
+
+
+             }
+
+             function deleteRow() {
+    
+                    document.getElementById("StudentRec").deleteRow(-1);
+                }
+    </script>
+
+</head>
+<body>
+
+    <div class="major">
+
+        <input type="text"placeholder="Roll Number" id="srno">
+        <input type="text"placeholder="Student Name" id="sname">
+        <button type="button" onclick="AddStudent()" id="add">Add Details</button>
+
+        <div class="tablestudent" id="table" >
+            <table id="StudentRec" border="1px solid black">
+                <tr bg-color="black">
+                    <th>Roll Number</th>
+                    <th>Name</th>
+                </tr>
+                </table>
+        </div>
+
+        <button type="button" id="remove" onclick="deleteRow()">Remove Last Entery</button>
+        
+    </div>
+    
+
+
+    
+</body>
+</html>
