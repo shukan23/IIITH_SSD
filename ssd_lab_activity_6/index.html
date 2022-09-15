@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shukan Patel</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main1.js"></script>
+</head>
+<body>
+    <h3>Team Form</h3>
+    <table>
+        <form action="">
+            <div class="iline">
+                <tr>
+                    <td> <lable>Manager Name</lable> </td> 
+                    <td><input type="text" required id="mname"></td>
+                </tr>
+                
+            </div>
+            <div class="iline">
+                <tr>
+                    <td> <lable>Group Email</lable> </td>
+                    <td><input type="text" required id="email"> </td>
+                </tr>
+                
+            </div>
+            
+            <div class="iline">
+                <tr>
+                    <td>  <lable>Server Username</lable> </td>
+                        <td><input type="text" required
+                oninput="javascript:nameHandler(event)" id="uname"><p id="errorMessage" ></p> </td>
+           
+                </tr>
+                 </div>
+            <div class="iline">
+                <tr>
+                    <td> <lable>Server Password</lable> </td>
+                    <td> <input type="password" required id="ppw"> </td>
+                </tr>
+                
+            </div>
+            <div class="iline">
+                <tr>
+                    <td>  <lable>Confirm Password</lable></td> 
+                        <td>  <input type="password" required
+                    onblur="javascript:pwHandler(event)" id="cpw"><p id="pwmsg" ></p></td> 
+                    
+                </tr>
+           </div>
+            <div class="iline">
+                <tr>
+                  <td> <lable>Team Lead</lable></td> 
+                <td><select name="lead" id="leader" required>
+                    <option value="Poojan">Poojan</option>
+                    <option value="Dhruvin">Dhruvin</option>
+                    <option value="Aman">Aman</option>
+                    <option value="Axar">Axar</option>
+                    <option value="Jainish">Jainish</option>
+                  </select></td> 
+                </tr>
+                
+            </div>
+            <tr>
+             <td>  <lable>Team Members</lable> </td> 
+             <td><div class="mem">
+                <p>Poojan</p>
+                <p>Dhruvin</p>
+                <p>Aman</p>
+                <p>Axar</p>
+                <p>Jainish</p>
+            </div>
+    
+            <div class="mem">
+                
+            </div></td>
+            </tr>
+            <tr>
+                <td>    
+                    <button
+    onclick="javascript:clickHandler(event)"> Submit</button>
+                </td>   </tr>
+
+        </form>
+    </table>
+    
+
+    
+</body>
+</html>

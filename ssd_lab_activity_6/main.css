@@ -1,0 +1,15 @@
+.iline{
+    padding : 7px
+}
+
+#leader{
+    width : 150px;
+    padding-right : 7px;
+    inline-size: auto;
+}
+
+.mem{
+    border:1px solid;
+    height : 300px;
+    width :120px;
+}
